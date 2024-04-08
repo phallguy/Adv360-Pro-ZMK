@@ -1,1 +1,36 @@
-[]
+[
+	{
+		"names": [
+			"LS(LALT(EQUAL))"
+		],
+		"description": "LS(LALT(EQUAL))",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"LS(LALT(MINUS))"
+		],
+		"description": "LS(LALT(MINUS))",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	}
+]
