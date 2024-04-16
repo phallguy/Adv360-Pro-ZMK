@@ -60,14 +60,16 @@
     combos {
         compatible = "zmk,combos";
 
-        underscore {
+        combo_underscore {
             bindings = <&kp UNDER>;
-            key-positions = <65 42>;
+            key-positions = <65 70>;
+            timeout-ms = <150>;
         };
 
-        equals {
+        combo_equals {
             bindings = <&kp EQUAL>;
-            key-positions = <31 70>;
+            key-positions = <34 39>;
+            timeout-ms = <150>;
         };
     };
 
