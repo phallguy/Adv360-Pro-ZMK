@@ -81,7 +81,7 @@
         combo_equals {
             bindings = <&kp EQUAL>;
             key-positions = <40 33>;
-            timeout-ms = <150>;
+            timeout-ms = <50>;
         };
     };
 
