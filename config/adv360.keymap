@@ -75,12 +75,6 @@
         combo_underscore {
             bindings = <&kp UNDER>;
             key-positions = <65 70>;
-            timeout-ms = <150>;
-        };
-
-        combo_equals {
-            bindings = <&kp EQUAL>;
-            key-positions = <40 33>;
             timeout-ms = <50>;
         };
     };
