@@ -36,12 +36,12 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
             flavor = "tap-preferred";
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 46 47 48 49 50 51 60 61 62 63 64 69>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <50>;
         };
 
         hml: hml {
@@ -50,12 +50,22 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 39 40 41 42 43 44 45 54 55 56 57 58 59 71 72 73 74 75 66>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <50>;
+        };
+
+        caps: caps {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CAPS";
+            bindings = <&kp>, <&caps_word>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <125>;
+            flavor = "balanced";
         };
     };
 
@@ -80,11 +90,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1       &kp N2       &kp N3        &kp N4        &kp N5  &tog 1                                                                                                   &mo 3              &kp N6  &kp N7        &kp N8         &kp N9       &kp N0          &kp MINUS
-&kp TAB    &kp Q        &kp W        &kp E         &kp R         &kp T   &kp C_VOL_UP                                                                                             &kp LS(LA(EQUAL))  &kp Y   &kp U         &kp I          &kp O        &mt RC(P) P     &kp BSLH
-&kp ESC    &hml LCMD A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G   &kp C_VOL_DN  &kp LCMD       &kp LALT                      &kp RIGHT_ALT              &kp RIGHT_COMMAND  &kp LS(LA(MINUS))  &kp H   &hmr RCTRL J  &hmr RSHIFT K  &hmr LALT L  &hmr RCMD SEMI  &kp SQT
-&kp LSHFT  &kp Z        &kp X        &kp C         &kp V         &kp B                                &kp LG(LS(LEFT_BRACKET))      &kp LG(LS(RIGHT_BRACKET))                                        &kp N   &kp M         &kp COMMA      &kp DOT      &kp FSLH        &kp RSHFT
-&mo 2      &kp GRAVE    &caps_word   &kp LEFT      &kp RIGHT             &kp SPACE     &kp BACKSPACE  &kp LCTRL                     &kp RCTRL                  &kp ENTER          &kp SPACE                  &kp DOWN      &kp UP         &kp LBKT     &kp RBKT        &mo 2
+&kp EQUAL  &kp N1       &kp N2            &kp N3        &kp N4        &kp N5  &tog 1                                                                                                   &mo 3              &kp N6  &kp N7        &kp N8         &kp N9       &kp N0          &kp MINUS
+&kp TAB    &kp Q        &kp W             &kp E         &kp R         &kp T   &kp C_VOL_UP                                                                                             &kp LS(LA(EQUAL))  &kp Y   &kp U         &kp I          &kp O        &mt RC(P) P     &kp BSLH
+&kp ESC    &hml LCMD A  &hml LALT S       &hml LSHFT D  &hml LCTRL F  &kp G   &kp C_VOL_DN  &kp LCMD       &kp LALT                      &kp RIGHT_ALT              &kp RIGHT_COMMAND  &kp LS(LA(MINUS))  &kp H   &hmr RCTRL J  &hmr RSHIFT K  &hmr LALT L  &hmr RCMD SEMI  &kp SQT
+&kp LSHFT  &kp Z        &kp X             &kp C         &kp V         &kp B                                &kp LG(LS(LEFT_BRACKET))      &kp LG(LS(RIGHT_BRACKET))                                        &kp N   &kp M         &kp COMMA      &kp DOT      &kp FSLH        &kp RSHFT
+&mo 2      &kp GRAVE    &caps CAPSLOCK 0  &kp LEFT      &kp RIGHT             &kp SPACE     &kp BACKSPACE  &kp LCTRL                     &kp RCTRL                  &kp ENTER          &kp SPACE                  &kp DOWN      &kp UP         &kp LBKT     &kp RBKT        &mo 2
             >;
         };
 
