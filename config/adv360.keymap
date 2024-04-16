@@ -36,11 +36,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2      &kp N3       &kp N4       &kp N5  &tog 1                                                                                                   &mo 3              &kp N6  &kp N7       &kp N8       &kp N9    &kp N0       &kp MINUS
-&kp TAB    &kp Q      &kp W       &kp E        &kp R        &kp T   &kp C_VOL_UP                                                                                             &kp LS(LA(EQUAL))  &kp Y   &kp U        &kp I        &kp O     &mt RC(P) P  &kp BSLH
-&kp ESC    &kp A      &kp S       &hm LSHFT D  &hm LCTRL F  &kp G   &kp C_VOL_DN  &kp LCMD       &kp LALT                      &kp RIGHT_ALT              &kp RIGHT_COMMAND  &kp LS(LA(MINUS))  &kp H   &hm RCTRL J  &hm RSHFT K  &kp L     &kp SEMI     &kp SQT
-&kp LSHFT  &kp Z      &kp X       &kp C        &kp V        &kp B                                &kp LG(LS(LEFT_BRACKET))      &kp LG(LS(RIGHT_BRACKET))                                        &kp N   &kp M        &kp COMMA    &kp DOT   &kp FSLH     &kp RSHFT
-&mo 2      &kp GRAVE  &caps_word  &kp LEFT     &kp RIGHT            &kp SPACE     &kp BACKSPACE  &kp LCTRL                     &kp RCTRL                  &kp ENTER          &kp SPACE                  &kp DOWN     &kp UP       &kp LBKT  &kp RBKT     &mo 2
+&kp EQUAL  &kp N1      &kp N2      &kp N3       &kp N4       &kp N5  &tog 1                                                                                                   &mo 3              &kp N6  &kp N7       &kp N8       &kp N9      &kp N0         &kp MINUS
+&kp TAB    &kp Q       &kp W       &kp E        &kp R        &kp T   &kp C_VOL_UP                                                                                             &kp LS(LA(EQUAL))  &kp Y   &kp U        &kp I        &kp O       &mt RC(P) P    &kp BSLH
+&kp ESC    &hm LCMD A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G   &kp C_VOL_DN  &kp LCMD       &kp LALT                      &kp RIGHT_ALT              &kp RIGHT_COMMAND  &kp LS(LA(MINUS))  &kp H   &hm RCTRL J  &hm RSHFT K  &hm RALT L  &hm RCMD SEMI  &kp SQT
+&kp LSHFT  &kp Z       &kp X       &kp C        &kp V        &kp B                                &kp LG(LS(LEFT_BRACKET))      &kp LG(LS(RIGHT_BRACKET))                                        &kp N   &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp RSHFT
+&mo 2      &kp GRAVE   &caps_word  &kp LEFT     &kp RIGHT            &kp SPACE     &kp BACKSPACE  &kp LCTRL                     &kp RCTRL                  &kp ENTER          &kp SPACE                  &kp DOWN     &kp UP       &kp LBKT    &kp RBKT       &mo 2
             >;
         };
 
