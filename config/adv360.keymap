@@ -79,11 +79,13 @@
             quick-tap-ms = <200>;
         };
 
-        esc_caps: esc_caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ESC_CAPS";
-            #binding-cells = <0>;
-            bindings = <&kp ESCAPE>, <&caps_word>;
+        shift_caps: shift_caps {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_CAPS";
+            bindings = <&kp>, <&caps_word>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
         };
     };
 
@@ -94,11 +96,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL   &kp N1       &kp N2            &kp N3        &kp N4        &kp N5  &tog 2                                                                                                            &mo 4              &kp N6  &kp N7        &kp N8         &kp N9       &kp N0          &kp MINUS
-&lt 1 TAB   &kp Q        &kp W             &kp E         &kp R         &kp T   &kp C_VOL_UP                                                                                                      &kp LS(LA(EQUAL))  &kp Y   &kp U         &kp I          &kp O        &kp P           &kp BSLH
-&kp ESCAPE  &hml LCMD A  &hml LALT S       &hml LSHFT D  &hml LCTRL F  &kp G   &kp C_VOL_DN  &ht LCMD LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))      &kp RIGHT_ALT      &kp RIGHT_COMMAND  &kp LS(LA(MINUS))  &kp H   &hmr RCTRL J  &hmr RSHIFT K  &hmr LALT L  &hmr RCMD SEMI  &kp SQT
-&kp LSHFT   &kp Z        &kp X             &kp C         &kp V         &kp B                                                &kp LEFT_BRACKET               &none                                                    &kp N   &kp M         &kp COMMA      &kp DOT      &kp FSLH        &kp RSHFT
-&mo 3       &kp GRAVE    &caps CAPSLOCK 0  &kp LEFT      &kp RIGHT             &kp SPACE     &kp BACKSPACE                  &kp RIGHT_BRACKET              &kp RIGHT_CONTROL  &kp ENTER          &kp SPACE                  &kp DOWN      &kp UP         &kp LBKT     &kp RBKT        &mo 3
+&kp EQUAL                 &kp N1       &kp N2            &kp N3        &kp N4        &kp N5  &tog 2                                                                                                            &mo 4              &kp N6  &kp N7        &kp N8         &kp N9       &kp N0          &kp MINUS
+&lt 1 TAB                 &kp Q        &kp W             &kp E         &kp R         &kp T   &kp C_VOL_UP                                                                                                      &kp LS(LA(EQUAL))  &kp Y   &kp U         &kp I          &kp O        &kp P           &kp BSLH
+&kp ESCAPE                &hml LCMD A  &hml LALT S       &hml LSHFT D  &hml LCTRL F  &kp G   &kp C_VOL_DN  &ht LCMD LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))      &kp RIGHT_ALT      &kp RIGHT_COMMAND  &kp LS(LA(MINUS))  &kp H   &hmr RCTRL J  &hmr RSHIFT K  &hmr LALT L  &hmr RCMD SEMI  &kp SQT
+&shift_caps LEFT_SHIFT 0  &kp Z        &kp X             &kp C         &kp V         &kp B                                                &kp LEFT_BRACKET               &none                                                    &kp N   &kp M         &kp COMMA      &kp DOT      &kp FSLH        &shift_caps RIGHT_SHIFT 0
+&mo 3                     &kp GRAVE    &caps CAPSLOCK 0  &kp LEFT      &kp RIGHT             &kp SPACE     &kp BACKSPACE                  &kp RIGHT_BRACKET              &kp RIGHT_CONTROL  &kp ENTER          &kp SPACE                  &kp DOWN      &kp UP         &kp LBKT     &kp RBKT        &mo 3
             >;
         };
 
