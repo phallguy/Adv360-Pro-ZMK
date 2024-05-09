@@ -95,11 +95,13 @@
         spunderscore {
             bindings = <&kp UNDER>;
             key-positions = <31 70>;
+            timeout-ms = <150>;
         };
 
         combo_spunderscore_left {
             bindings = <&kp UNDER>;
             key-positions = <31 65>;
+            timeout-ms = <150>;
         };
     };
 
