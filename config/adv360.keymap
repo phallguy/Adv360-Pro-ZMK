@@ -127,6 +127,20 @@
             bindings = <&kp LEFT_BRACE>;
             key-positions = <55 56>;
         };
+
+        combo_erb {
+            bindings = <&macro_erb>;
+            key-positions = <56 57>;
+        };
+    };
+
+    macros {
+        macro_erb: macro_erb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp PRCNT &kp SPACE &kp SPACE &kp PRCNT &kp GT &kp LEFT &kp LEFT &kp LEFT>;
+            label = "MACRO_ERB";
+        };
     };
 
     keymap {
