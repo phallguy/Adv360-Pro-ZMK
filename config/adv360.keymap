@@ -134,6 +134,11 @@
             bindings = <&macro_erb>;
             key-positions = <56 57>;
         };
+
+        combo_underscore_right {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <42 43>;
+        };
     };
 
     macros {
