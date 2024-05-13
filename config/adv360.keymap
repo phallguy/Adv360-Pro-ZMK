@@ -126,7 +126,7 @@
         };
 
         combo_right_brace {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <55 56>;
         };
 
