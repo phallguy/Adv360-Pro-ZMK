@@ -164,6 +164,8 @@
             #binding-cells = <0>;
             bindings = <&kp LT &kp PRCNT &kp SPACE &kp PRCNT &kp GT &kp LEFT &kp LEFT &kp LEFT>;
             label = "MACRO_ERB";
+            wait-ms = <5>;
+            tap-ms = <10>;
         };
     };
 
