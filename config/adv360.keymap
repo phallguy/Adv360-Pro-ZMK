@@ -174,11 +174,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL                 &kp N1       &kp N2            &kp N3        &kp N4        &kp N5  &none                                                                                                             &mo 3            &kp N6  &kp N7        &kp N8         &kp N9       &kp N0          &kp MINUS
-&kp TAB                   &kp Q        &kp W             &kp E         &kp R         &kp T   &caps CAPS 0                                                                                                      &kp C_VOLUME_UP  &kp Y   &kp U         &kp I          &kp O        &kp P           &kp BSLH
-&kp ESCAPE                &hml LCMD A  &hml LALT S       &hml LSHFT D  &hml LCTRL F  &kp G   &none         &ht LCMD LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))      &kp RIGHT_ALT      &kp RIGHT_COMMAND  &kp C_VOL_DN     &kp H   &hmr RCTRL J  &hmr RSHIFT K  &hmr LALT L  &hmr RCMD SEMI  &kp SQT
-&shift_caps LEFT_SHIFT 0  &kp Z        &kp X             &kp C         &kp V         &kp B                                                &mo 2                          &kp RS(RA(EQUAL))                                      &kp N   &kp M         &kp COMMA      &kp DOT      &kp FSLH        &shift_caps RIGHT_SHIFT 0
-&kp EQUAL                 &kp GRAVE    &caps CAPSLOCK 0  &kp LEFT      &kp RIGHT             &kp SPACE     &kp BACKSPACE                  &mo 1                          &kp RS(RA(MINUS))  &kp ENTER          &kp SPACE                &kp DOWN      &kp UP         &kp LBKT     &kp RBKT        &kp MINUS
+&kp EQUAL                 &kp N1       &kp N2            &kp N3        &kp N4        &kp N5  &caps CAPS 0                                                                                                          &mo 3            &kp N6  &kp N7        &kp N8         &kp N9       &kp N0          &kp MINUS
+&kp TAB                   &kp Q        &kp W             &kp E         &kp R         &kp T   &caps CAPS 0                                                                                                          &kp C_VOLUME_UP  &kp Y   &kp U         &kp I          &kp O        &kp P           &kp BSLH
+&kp ESCAPE                &hml LCMD A  &hml LALT S       &hml LSHFT D  &hml LCTRL F  &kp G   &kp LC(UP_ARROW)  &ht LCMD LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))      &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp C_VOL_DN     &kp H   &hmr RCTRL J  &hmr RSHIFT K  &hmr LALT L  &hmr RCMD SEMI  &kp SQT
+&shift_caps LEFT_SHIFT 0  &kp Z        &kp X             &kp C         &kp V         &kp B                                                    &mo 2                          &kp RS(RA(EQUAL))                                      &kp N   &kp M         &kp COMMA      &kp DOT      &kp FSLH        &shift_caps RIGHT_SHIFT 0
+&kp EQUAL                 &kp GRAVE    &caps CAPSLOCK 0  &kp LEFT      &kp RIGHT             &kp SPACE         &kp BACKSPACE                  &mo 1                          &kp RS(RA(MINUS))  &kp ENTER          &kp SPACE                &kp DOWN      &kp UP         &kp LBKT     &kp RBKT        &kp MINUS
             >;
         };
 
