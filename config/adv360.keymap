@@ -99,6 +99,7 @@
             key-positions = <18 17>;
             slow-release;
             timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         combo_left_paren {
@@ -106,6 +107,7 @@
             key-positions = <32 31>;
             slow-release;
             timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         combo_left_brace {
@@ -113,6 +115,7 @@
             key-positions = <50 49>;
             slow-release;
             timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         combo_right_bracket {
@@ -120,6 +123,7 @@
             key-positions = <23 24>;
             slow-release;
             timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         combo_right_paren {
@@ -134,6 +138,7 @@
             key-positions = <55 56>;
             slow-release;
             timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         combo_erb {
@@ -141,6 +146,7 @@
             key-positions = <56 57>;
             slow-release;
             timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         combo_underscore_right {
@@ -148,6 +154,7 @@
             key-positions = <42 43>;
             slow-release;
             timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         combo_equals {
@@ -155,6 +162,7 @@
             key-positions = <31 30>;
             slow-release;
             timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
     };
 
